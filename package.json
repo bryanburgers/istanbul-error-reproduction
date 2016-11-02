@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "istanbul-test",
+  "version": "0.0.0",
+  "description": "Reduced test case on why istanbul is failing",
+  "scripts": {
+    "test": "mocha test/**/*.js",
+    "coverage": "istanbul cover --include-all-sources -i 'lib/**' _mocha 'test/**/*.js'"
+  },
+  "author": "Bryan Burgers <bryan@burgers.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "esprima": "^2.7.3"
+  }
+}
